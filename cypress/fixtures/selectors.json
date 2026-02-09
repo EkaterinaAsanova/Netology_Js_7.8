@@ -1,0 +1,10 @@
+{
+"title": ".page-header__title",
+"calendar": ".page-nav__day",
+"movies": ".movie",
+"movie_title": "[data-hall-id='2611'] > .conf-step__seances-timeline > .conf-step__seances-movie > .conf-step__seances-movie-title",
+"number": "[draggable='true'][data-film-id='131']",
+ "days": "a.page-nav__day:nth-of-type(2)",
+ "button": ".acceptin-button",
+ "movie_card": "main > :nth-child(3)"
+}

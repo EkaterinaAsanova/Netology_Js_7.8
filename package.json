@@ -1,0 +1,19 @@
+{
+  "name": "cypress-test",
+  "version": "1.0.0",
+  "description": "first tests with Cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-dashboard": "npx cypress run --record --key 991aa099-2e55-42f1-be63-e9b5c2116dec",
+    
+    "ci:adminPage":"cypress run --spec cypress/e2e/adminPage.cy.js --group adminPage --ci-build-id 5 --record --key 9902e722-d34f-4c02-ad0f-ae7fe01d07ab",
+    "ci:mainPage":"cypress run --spec cypress/e2e/mainPage.cy.js --group mainPage --ci-build-id 5 --record --key 9902e722-d34f-4c02-ad0f-ae7fe01d07ab"
+
+  },
+  "author": "OM",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^15.9.0"
+  }
+}
