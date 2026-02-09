@@ -63,10 +63,11 @@ describe("7.7.3 booking a movie with admin data", () => {
 			const seats = require("../fixtures/seats.json");
 			seats.forEach(seat => {
 				cy.get(`.buying-scheme__wrapper > :nth-child(${seat.row}) > :nth-child(${seat.seat})`).click();
+	
 			});
 			cy.get(selectors.button).click();
 			cy.contains("Вы выбрали билеты:").should('be.visible');
 		})
 
-	});
-});
+	})
+})
